@@ -10,7 +10,7 @@ int main() {
     int n = rand();
 
     /* Print the random number */
-    printf("The number is %d\n", n);
+    printf("%d ", n);
 
     /* Check if the number is positive, zero, or negative */
     if (n > 0) {
