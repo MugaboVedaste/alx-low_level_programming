@@ -13,7 +13,7 @@ int main() {
     int lastDigit = abs(n) % 10;
 
     // Print the original number
-    printf("Last digit of %d is ", n);
+    printf("Last digit of %d is %d ", n, lastDigit);
 
     // Check the last digit and print the appropriate message
     if (lastDigit > 5) {
