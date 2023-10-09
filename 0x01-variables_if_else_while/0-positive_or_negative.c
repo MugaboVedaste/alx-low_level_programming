@@ -3,16 +3,16 @@
 #include <time.h>
 
 int main() {
-    /* Seed the random number generator with the current time */
-    srand((unsigned)time(NULL));
+    // Seed the random number generator with the current time
+    srand(time(NULL));
 
-    /* Generate a random number and store it in the variable n */
-    int n = rand();
+    // Generate a random number between -100 and 100
+    int n = rand() % 201 - 100;
 
-    /* Print the random number */
-    printf("%d ", n);
+    // Print the random number
+    printf("The number is: %d\n", n);
 
-    /* Check if the number is positive, zero, or negative */
+    // Check if the number is positive, zero, or negative
     if (n > 0) {
         printf("is positive\n");
     } else if (n == 0) {
