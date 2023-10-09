@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE=main.c && gcc -S -masm=intel "$CFILE" && export CFILE=0-main.c && gcc -o 0-intel -c "$CFILE" && ./0-intel
+export CFILE=main.c && gcc -S -masm=intel "$CFILE" && gcc -o "${CFILE%.c}" "${CFILE%.c}.s" && ./"${CFILE%.c}"
