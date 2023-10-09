@@ -3,11 +3,14 @@
 #include <time.h>
 
 int main() {
+    long t;
+    int n;
+    
     // Seed the random number generator with the current time
-    srand(time(NULL));
-
+    srand((unsigned) time(&t));
+    
     // Generate a random number between -100 and 100
-    int n = rand() % 201 - 100;
+    n = (rand() % 201) - 100;
 
     // Print the random number
     printf("The number is: %d\n", n);
