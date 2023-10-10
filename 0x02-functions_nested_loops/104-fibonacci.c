@@ -7,25 +7,25 @@
  */
 int main(void)
 {
-    int count;
-    unsigned long int fib1 = 1, fib2 = 2, next;
+	int count;
+	unsigned long int fib1 = 1, fib2 = 2, next;
 
-    count = 2;  /* Start with 2 because we already have 1 and 2 */
+	count = 2; /* Start with 2 because we already have 1 and 2 */
 
-    printf("%lu, %lu", fib1, fib2); /* Print the first two Fibonacci numbers */
+	printf("%lu, %lu", fib1, fib2); /* Print the first two Fibonacci numbers */
 
-    while (count < 98)
-    {
-        next = fib1 + fib2;
-        fib1 = fib2;
-        fib2 = next;
+	while (count < 50) /* Print the first 50 Fibonacci numbers */
+	{
+		next = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = next;
 
-        printf(", %lu", next);
+		printf(", %lu", next);
 
-        count++;
-    }
+		count++;
+	}
 
-    printf("\n");
+	printf("\n");
 
-    return (0);
+	return (0);
 }
